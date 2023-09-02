@@ -16,24 +16,24 @@
   <section id="title" class="gradient-background">
     <div class="container col-xxl-8 px-4 pt-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 pb-5">
-        <div id="cglogo" style="height:440px;"></div>
-            <script>
-              var animation = bodymovin.loadAnimation({
-                container: document.getElementById('cglogo'),
-                path: 'cg logo anim lottie json.json',
-                render: svg,
-                loop: false,
-                autoplay: true,
-                name: 'cg logo test'
-              });
-            </script> 
+       
         <div class="col-10 col-sm-8 col-lg-6">
           <img src="./images/portrait-small.png" class="profile-img d-block mx-lg-auto " alt="iphone"  loading="lazy">
         </div>
         <div class="col-lg-6">
           
           <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-            CAROL GREENBERG</h1>
+            <div id="cglogo" style="display: inline-block;  height:60px; text-align: left;"></div>
+            <script>
+              var animation = bodymovin.loadAnimation({
+                container: document.getElementById('cglogo'),
+                path: 'cg logo anim lottie json.json',
+                render: 'svg',
+                loop: false,
+                autoplay: true,
+                name: 'cg logo test'
+              });
+            </script> CAROL GREENBERG</h1>
           <h2>UX Design Consultant</h2>
           <p class="lead spacer">A seasoned Sr. UX/Product designer with proficiency in designing user experiences for the banking, technology, and healthcare industries. Adept at enhancing the design of user-friendly and creative experiences for mobile, dekstop and devices.
           </p>
