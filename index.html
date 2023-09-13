@@ -9,101 +9,89 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" ></script>
-  ></script>
+  
   <title>Carol Greenberg - UX Design</title>
 </head>
 
 <body>
-
-  <!-- Title -->
-  <section id="title" class="gradient-background">
-    <div class="container col-xxl-12 px-4 pt-5 mb-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 pb-5">
-       
-       <!--  <div class="col-10 col-sm-8 col-lg-6" ;">
-          <img src="./images/portrait-small.png" class="profile-img d-block mx-lg-auto " alt="iphone"  loading="lazy">
-        </div> -->
-        <div class="col-lg-12 col-sm-12">
-          
-          <h1 style="color:white">
-            <div id="cglogo" style="display: inline-block;  height:60px; "></div>
-            <script>
-              var animation = bodymovin.loadAnimation({
-                container: document.getElementById('cglogo'),
-                path: 'cg logo anim lottie json.json',
-                render: 'svg',
-                loop: false,
-                autoplay: true,
-                name: 'cg logo test'
-              });
-            </script> <span style="color:white" >CAROL GREENBERG<!-- test menu-->
-        <nav class="navbar navbar-expand-lg navbar-dark " style="float:right; font-size:45%">
-         
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link " href="#" >Home </a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link 
-                dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Case Studies
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(160, 160, 160);">
-                  <a class="dropdown-item" href="#">Aural Analytics</a>
-                  <a class="dropdown-item" href="#">PG&E</a>
-                  <a class="dropdown-item" href="#">Wells Fargo</a>
-                  <a class="dropdown-item" href="#">MeridianLink</a>
-                  <a class="dropdown-item" href="#">QiO Technologies</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" >Contact</a>
-              </li>
-            
-            </ul>
-          
-          </div>
-        </nav>
-        <!-- end test menu--></span>
-            </h1>
-          
-            
-          </div>
-        </div>
-        
-        
-      </div>
+  <!-- go to top button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!-- section test navbar-->
+<nav class="navbar navbar-expand-sm gradient-background" id="title" aria-label="Navigation bar">
+  <div class="container-fluid">
+    
     
 
-  </section>
-<section id="intro"><div class="container"><div class="col-lg-12 col-sm-12 mb-5">
-  <h3 style="margin-top: 5px">UX DESIGN CONSULTANT</h3>
-  <p class="lead spacer">A talented Sr. UX/Product designer with expertise in designing user experiences for banking, technology, and healthcare industries. Brilliant at enhancing the design of user-friendly and creative experiences for mobile, desktop and devices.
+    <!-- menu-->
+    <!-- animated CG logo -->
+   <div class="parent">
+    <div class="div1" id="cglogo" style="height:60px; "></div>
+    <script>
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById('cglogo'),
+        path: 'cg logo anim lottie json.json',
+        render: 'svg',
+        loop: false,
+        autoplay: true,
+        name: 'cg logo test'
+      });
+    </script>
+    <div class="div2" ><div class="div2Align"><h2 style="color:white; justify-items: center;">CAROL GREENBERG</h2></div></div></div>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navigationBarMain" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    
+    <div class=" navbar-collapse collapse navbar-dark" id="navigationBarMain" style="margin-left:20px;">
+
+      <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Case Studies</a>
+          <ul class="dropdown-menu" >
+            <li><a class="dropdown-item" href="#">Pacific Gas & Electric</a></li><li><a class="dropdown-item" href="#">Aural Analtyics</a></li>
+            <li><a class="dropdown-item" href="#">QiO Technologies</a></li>
+            <li><a class="dropdown-item" href="#">MeridianLink</a></li>
+            <li><a class="dropdown-item" href="#">Wells Fargo Bank</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contactform">Contact</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+<!-- end test navbar -->
+ 
+<section id="intro"><div class="container"><div class="col-lg-12 col-sm-12 mb-5" style="margin-top:45px;">
+  <h3 style="margin-top: 5px"><img src="./images/portrait-small.png" class="profile-img2" /> UX DESIGN CONSULTANT</h3>
+  <p class="lead spacer">A talented Sr. UX/Product designer with expertise in designing user experiences for banking, technology, and healthcare industries. Brilliant at enhancing the design of user-friendly and creative experiences for mobile and desktop. Available now for UX contracts.
   </p>
 
     
   <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-    <a href=mailto:carolg.com@gmail.com><button type="button" class="btn btn-dark btn-lg px-4 me-md-2">
-</svg> Contact Me</button></a>
+    <a href="#contactform" ><button class=" button" >Contact</button></a>
 </div></div></section>
   <!-- Portfolio -->
   
   <section id="features">
-    <div class="album py-5 bg-body-tertiary">
-      <div class="container">
-        
+    <div class="album py-5 bg-body-secondary fadeInUp-animation">
+      <div class="container ">
+        <h2 style="margin-bottom: 1.5rem;">PORTFOLIO OF WORK</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           
-          <div class="col ">
-            <a href="#">
+          <div class="col">
+            <a href="#" class="noUnderline">
               <div class="card__one card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="./images/mockrocket-capture-sv-all2.png" alt="Speech Vitals" class="img-portfolio"></svg>
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Aural Analytics</title><img src="./images/mockrocket-capture-sv-all2.png" alt="Speech Vitals" class="img-portfolio"></svg>
               <div class="card-body">
                 <p class="card-text">Speech Vitals app design for Aural Analytics</p>
                 <div class="d-flex justify-content-between align-items-center">
@@ -113,60 +101,66 @@
             </div></a>
           </div>
           <div class="col">
+            <a href="#" class="noUnderline">
             <div class="card__one card shadow-sm">
-              </a><svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="./images/mockrocket-penspen-thumbnail.png" alt="Penspen" class="img-portfolio"></svg>
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>PensPen</title><img src="./images/mockrocket-penspen-thumbnail.png" alt="Penspen" class="img-portfolio"></svg>
               <div class="card-body">
                 <p class="card-text">Penspen  analytics app for QiO Technologies</p>
                 <div class="d-flex justify-content-between align-items-center">
                   
                 </div>
               </div>
-            </div>
+            </div></a>
           </div>
           <div class="col">
+            <a href="#" class="noUnderline">
             <div class="card__one card shadow-sm">
-              </a><svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="./images/dash-mobile-square.png" alt="PG&E DASH"  class="img-portfolio"></svg>
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Pacific Gas & Electric</title><img src="./images/dash-mobile-square.png" alt="PG&E DASH"  class="img-portfolio"></svg>
               <div class="card-body">
                 <p class="card-text">Earthquake Emergency app design for PG&E</p>
                 <div class="d-flex justify-content-between align-items-center">
                   
                 </div>
               </div>
-            </div>
+            </div></a>
           </div>
   
           <div class="col">
+            <a href="#" class="noUnderline">
             <div class="card__one card shadow-sm">
-              </a><svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="./images/casestudy-thumbnail-wf2.png" alt="Wells Fargo" class="img-portfolio"></svg>
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Wells Fargo Bank</title><img src="./images/casestudy-thumbnail-wf2.png" alt="Wells Fargo" class="img-portfolio"></svg>
               <div class="card-body">
                 <p class="card-text">Wells Fargo commercial banking apps</p>
                 <div class="d-flex justify-content-between align-items-center">
                   
                 </div>
               </div>
-            </div>
+            </div></a>
           </div>
           <div class="col">
+            <a href="#" class="noUnderline">
             <div class="card__one card shadow-sm">
-              </a><svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="./images/mockrocket-TeamPortal.png" alt="Team Portal"  class="img-portfolio"></svg>
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Aural Analtyics</title>
+                <img src="./images/mockrocket-TeamPortal.png" alt="Team Portal"  class="img-portfolio"></svg>
               <div class="card-body">
                 <p class="card-text">Team Portal app design for Aural Analytics</p>
                 <div class="d-flex justify-content-between align-items-center">
                   
                 </div>
               </div>
-            </div>
+            </div></a>
           </div>
           <div class="col">
+            <a href="#" class="noUnderline">
             <div class="card__one card shadow-sm">
-              </a><svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><img src="./images/mockrocket-Meridianlink.png" alt="MerdianLink" class="img-portfolio"></svg>
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>MeridianLink</title><img src="./images/mockrocket-Meridianlink.png" alt="MerdianLink" class="img-portfolio"></svg>
               <div class="card-body">
                 <p class="card-text">Loan processing web app for MeridianLink</p>
                 <div class="d-flex justify-content-between align-items-center">
                   
                 </div>
               </div>
-            </div>
+            </div></a>
           </div>
           
           </div>
@@ -174,50 +168,81 @@
       </div>
     </div>
   </section>
-  <!-- Testimonial -->
+  <!-- about -->
   <section id="about me">
-    <div class="my-5">
+    <div class="my-5 fadeInUp-animation">
       <div class="p-5 text-center bg-body-primary">
         <div class="container py-5">
-          <h2 class="text-body-emphasis">About Me</h2>
-          <p class="col-lg-8 mx-auto lead">
-            When I was 7, I wanted to be an artist and a scientist. In college, I found a perflect blend in biomedical illustration. Having discovered computer graphics, I started out designing icons. Screen layout and UX design came next. I feel like I have been a UX designer my whole life! I also enjoy hiking, playing guitar and piano, and binge-watching TV. 
+          <h2 class="text-body-emphasis mb-5">About Me</h2>
+          <p class="col-lg-8 mx-auto lead" style="text-align: left;">
+            When I was 7, I wanted to be an artist and a scientist. In college, I found a perflect blend in biomedical illustration. Having discovered computer graphics, I began my career designing iconography for software applications and online services. User Interface and UX design was a natural progression. I feel like I have been a UX designer my whole life! <br /><br/>I also enjoy hiking, playing guitar and piano, and listening to live music. <br />
+
           </p>
           <img src="./images/portrait-small.png" class="profile-img2"/>
           <!-- link to resume-->
           <p></p><a href="https://drive.google.com/file/d/1JzM3XeqpzP3PbUPWXPwF8I2I-yRiT_0e/view?usp=sharing" target="_blank" class="btn t-btn_md js-click-stat t-animate t-animate_started" data-animate-style="fadeinup" data-animate-group="yes" style="color: rgb(255, 255, 255); background-color: rgb(27, 125, 158); border-radius: 100px; box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px 0px;" rel="noopener"><table role="presentation" style="width:100%; height:100%;"><tbody><tr><td>Download CV</td></tr></tbody></table></a>
-        </div>
+        </div> <p><a href="https://www.linkedin.com/in/theuxincubator/" target_blank><img src="./images/icons_linkedin.png"></a></p>
         
       </div>
     </div>
   </section>
   <!-- contact me -->
-  <section id="contact me" >
-    <div style="background-color: rgb(241, 241, 241);">
-      <div class="p-5 text-center bg-body-primary">
-        <div class="container py-5">
-          <h2 class="text-body-emphasis">Contact Me</h2>
-          <p class="col-lg-8 mx-auto lead">
-            You can contact me to discuss your upcoming UX project at <a href="mailto:carolg.com@gmail.com">carolg.com@gmail.com</a>
-          </p>
-          <p><a href="https://www.linkedin.com/in/theuxincubator/" target_blank><img src="./images/icons_linkedin.png"></a></p>
-        </div>
-        
+  
+  <section id="contactform" style="margin-bottom: 0px; padding-top:30px; padding-bottom:30px; background-color: rgb(233,236,239)"">
+    <div class=" container bg-body-secondary fadeInUp-animation" style="padding-left:15%; padding-right:15%;">
+      <div class="mb-3">
+       <form action="https://formspree.io/f/meqbknlr" name="myForm" onsubmit="return checkMessage()" method="post"> 
+        <p style="font-weight: bold;"> Contact me and let's discuss your upcoming UX design project.</p>
+        <label for="emailfield" class="form-label" type="email">Email</label>
+        <input type="email" name="email" required class="form-control" id="emailfield" >
+      </div>
+      <div class="mb-3">
+        <label for="messagefield" class="form-label">Message</label>
+        <textarea class="form-control" id="messagefield" name="messagefield" rows="3"></textarea>
+      </div>
+      <p id="errormessage" style="font-size: 80%; color:red;"></p>
+      <button class=" button" type="submit">Send</button>
+    </form>
+      
       </div>
     </div>
   </section>
+  
   <!-- Footer -->
   <section id="footer" class="gradient-background" >
     <div class="container ">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-3 py-1 border-top">
+    <footer class="row" style="padding-top:10px;">
       
-        <p class="text-body-secondary">© Carol Greenberg 2023</p>
+        <p class="text-body-primary">© 2023  &#8226; Carol Greenberg &#8226; Nashville, TN &#8226;  <a href="mailto:carolg.com@gmail.com" style="color:black">carolg.com@gmail.com</a></p>
       </div>
   
       
   </section>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- go to top scroll button -->
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+  
 </body>
 
 </html>
